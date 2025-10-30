@@ -23,9 +23,9 @@ To delete a car the admin should press a button "Delete" near the car that they 
 Create, Update and Delete operations should persist on the server and the local database alike.
 
 # Offline Service
-When the server goes offline the changes should persist on the local database and placed in a queue so when the server comes back up, the changes can be applied on the server side database as well.
-When the server goes offline a bar on the top side of the screen should notify the user that the server is down and the application is using the local database.
-Add operations by the admin should persist on the local database when offline. When back online the server side database will be updated and the new entities will be added.
-Update operations by the admin should persist on the local database when offline. When back online the server side database will be updated with the new information.
-Delete operations by the admni should persist on the local database when offline. When back online the server will get updated and all deleted entities in the local database should be removed on the server as well.
-Read operations should work normally except that the local database will be used to fetch the entities, which might result in some entities missing, depending on the scenario.
+- When the server goes offline the changes should persist on the local database and placed in a queue so when the server comes back up, the changes can be applied on the server side database as well.
+- When the server goes offline a bar on the top side of the screen should notify the user that the server is down and the application is using the local database.
+- Add operations by the admin should persist on the local database when offline. When back online the server side database will be updated and the new entities will be added.
+- Update operations by the admin should persist on the local database when offline. When back online the server side database will be updated with the new information.
+- Delete operations by the admni should persist on the local database when offline. When back online the server will get updated and all deleted entities in the local database should be removed on the server as well.
+- Read operations should work normally except that the local database will be used to fetch the entities, which might result in some entities missing, depending on the scenario.
